@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Artery@artery</name>
+	<comment></comment>
+	<projects></projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value>-j4</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/veins/src/artery</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/veins/src/artery</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments/>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Subprojects]/pybind11</name>
+			<type>2</type>
+			<location>/home/veins/src/artery/extern/pybind11</location>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/CaObject.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/CaObject.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/CaService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/CaService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/DenmObject.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/DenmObject.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/DenService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/DenService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ExampleService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/ExampleService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ItsG5BaseService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/ItsG5BaseService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ItsG5PromiscuousService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/ItsG5PromiscuousService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ItsG5Service.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/ItsG5Service.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/LocalDynamicMap.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/LocalDynamicMap.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Middleware.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/Middleware.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/StationaryMiddleware.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/StationaryMiddleware.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/StoryboardSignal.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/StoryboardSignal.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Timer.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/Timer.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehicleDataProvider.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/VehicleDataProvider.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehicleMiddleware.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/VehicleMiddleware.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/UseCase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/UseCase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ImpactReductionUseCase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/ImpactReductionUseCase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Memory.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/Memory.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/SuspendableUseCase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/SuspendableUseCase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/TrafficJamUseCase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/TrafficJamUseCase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/IcyRoadUseCase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/IcyRoadUseCase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/IcyRoadUseCaseRSU.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/IcyRoadUseCaseRSU.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/UseCaseVehicle.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/UseCaseVehicle.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/UseCaseRSU.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/application/den/UseCaseRSU.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/AccessInterface.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/AccessInterface.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/DccEntityBase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/DccEntityBase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/FsmDccEntity.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/FsmDccEntity.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/GeoNetPacket.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/GeoNetPacket.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/LimericDccEntity.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/LimericDccEntity.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/NoRateControlDccEntity.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/NoRateControlDccEntity.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Router.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/Router.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Runtime.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/Runtime.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/SecurityEntity.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/SecurityEntity.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/StationaryPositionProvider.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/StationaryPositionProvider.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehiclePositionProvider.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/networking/VehiclePositionProvider.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ChannelLoadMeasurements.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/nic/ChannelLoadMeasurements.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/RadioDriverBase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/nic/RadioDriverBase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/MobilityBase.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/traci/MobilityBase.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehicleController.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/traci/VehicleController.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehicleType.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/traci/VehicleType.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/AsioScheduler.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/AsioScheduler.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/AsioTask.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/AsioTask.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Identity.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/Identity.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/IdentityRegistry.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/IdentityRegistry.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/FilterRules.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/FilterRules.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Geometry.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/utility/Geometry.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/AsioData_m.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/artery/utility/AsioData_m.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VeinsConnectionManager.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/veins/VeinsConnectionManager.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VeinsMobility.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/veins/VeinsMobility.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VeinsObstacleControl.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/veins/VeinsObstacleControl.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VeinsRadioDriver.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/veins/VeinsRadioDriver.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/AntennaMobility.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/AntennaMobility.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/DistanceSwitchPathLoss.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/DistanceSwitchPathLoss.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/InetRadioDriver.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/InetRadioDriver.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/InetMobility.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/InetMobility.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/LinkClassifier.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/LinkClassifier.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/NLOSb.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/NLOSb.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/NLOSf.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/NLOSf.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/NLOSv.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/NLOSv.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/ObstacleIndex.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/ObstacleIndex.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/PathLoss.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/PathLoss.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/SmallScaleVariation.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/SmallScaleVariation.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VehicleIndex.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/VehicleIndex.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/Visualizer.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/gemv2/Visualizer.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Source Files/VanetRx.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/inet/VanetRx.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Header Files/AsioData_m.h</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/artery/utility/AsioData_m.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/CMake Rules/AsioData_m.cc.rule</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/artery/utility/AsioData_m.cc.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/CMake Rules/utility.rule</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/artery/utility.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] core/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/AndCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/AndCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/Binding.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/Binding.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/CarSetCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/CarSetCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/ConditionResult.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/ConditionResult.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/Effect.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/Effect.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/EffectStack.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/EffectStack.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/LimitCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/LimitCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/OrCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/OrCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/PolygonCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/PolygonCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/SignalEffect.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/SignalEffect.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/SignalEffectFactory.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/SignalEffectFactory.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/SpeedDifferenceCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/SpeedDifferenceCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/SpeedEffect.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/SpeedEffect.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/SpeedEffectFactory.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/SpeedEffectFactory.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/StopEffect.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/StopEffect.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/StopEffectFactory.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/StopEffectFactory.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/Storyboard.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/Storyboard.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/Story.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/Story.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/TimeCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/TimeCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/TtcCondition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/TtcCondition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Source Files/Vehicle.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/storyboard/Vehicle.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] storyboard/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/EnvironmentModelObject.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/EnvironmentModelObject.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/GlobalEnvironmentModel.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/GlobalEnvironmentModel.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/InterdistanceMatrix.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/InterdistanceMatrix.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/LocalEnvironmentModel.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/LocalEnvironmentModel.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/PreselectionPolygon.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/PreselectionPolygon.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/PreselectionRtree.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/PreselectionRtree.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/BaseSensor.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/BaseSensor.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/CamSensor.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/CamSensor.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/FrontRadar.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/FrontRadar.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/RadarSensor.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/RadarSensor.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/RearRadar.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/RearRadar.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/SensorConfiguration.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/SensorConfiguration.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/SensorPosition.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/SensorPosition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/SensorVisualizationConfig.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/sensor/SensorVisualizationConfig.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Source Files/EnvmodPrinter.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/artery/envmod/service/EnvmodPrinter.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] envmod/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/Angle.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/Angle.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/API.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/API.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/BasicModuleMapper.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/BasicModuleMapper.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/BasicNodeManager.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/BasicNodeManager.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/BasicSubscriptionManager.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/BasicSubscriptionManager.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/CheckTimeSync.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/CheckTimeSync.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/Core.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/Core.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/ConnectLauncher.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/ConnectLauncher.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/InsertionDelayNodeManager.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/InsertionDelayNodeManager.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/Listener.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/Listener.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/LiteAPI.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/LiteAPI.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/MultiTypeModuleMapper.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/MultiTypeModuleMapper.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/Position.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/Position.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/PosixLauncher.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/PosixLauncher.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/TestbedModuleMapper.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/TestbedModuleMapper.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/TestbedNodeManager.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/TestbedNodeManager.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/ValueUtils.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/ValueUtils.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/VariableCache.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/VariableCache.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/socket.cpp</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/sumo/foreign/tcpip/socket.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/storage.cpp</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/sumo/foreign/tcpip/storage.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Source Files/TraCIAPI.cpp</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/src/traci/sumo/utils/traci/TraCIAPI.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] traci/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files/ClearLaneService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/scenarios/highway-police/ClearLaneService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files/PoliceService.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/scenarios/highway-police/PoliceService.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files/PoliceClearLane_m.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/police_msgs/PoliceClearLane_m.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files/PoliceServiceStoryboard.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/scenarios/highway-police/PoliceServiceStoryboard.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Source Files/PoliceServiceEnvmod.cc</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/scenarios/highway-police/PoliceServiceEnvmod.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Header Files/PoliceClearLane_m.h</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/police_msgs/PoliceClearLane_m.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/CMake Rules/PoliceClearLane_m.cc.rule</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/police_msgs/PoliceClearLane_m.cc.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/CMake Rules/police_msgs.rule</name>
+			<type>1</type>
+			<location>/home/veins/src/artery/opp_messages/police_msgs.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] police/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
