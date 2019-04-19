@@ -17,11 +17,15 @@ add_library(core SHARED
     application/Timer.cc
     application/VehicleDataProvider.cc
     application/VehicleMiddleware.cc
+    application/den/UseCase.cc
     application/den/ImpactReductionUseCase.cc
     application/den/Memory.cc
     application/den/SuspendableUseCase.cc
     application/den/TrafficJamUseCase.cc
-    application/den/UseCase.cc
+    application/den/IcyRoadUseCase.cc
+    application/den/IcyRoadUseCaseRSU.cc
+    application/den/UseCaseVehicle.cc
+    application/den/UseCaseRSU.cc
     networking/AccessInterface.cc
     networking/DccEntityBase.cc
     networking/FsmDccEntity.cc

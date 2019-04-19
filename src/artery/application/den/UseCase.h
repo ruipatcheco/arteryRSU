@@ -17,7 +17,7 @@ namespace artery
 class DenmObject;
 class DenService;
 class StoryboardSignal;
-class VehicleDataProvider;
+//class VehicleDataProvider;
 
 namespace den
 {
@@ -45,16 +45,17 @@ public:
      */
     virtual void handleStoryboardTrigger(const StoryboardSignal&) = 0;
 
-    void initialize(int) override;
+    void initialize(int);
     int numInitStages () const override { return 1; }
+
+    virtual vanetza::asn1::Denm createMessageSkeleton() = 0;
+
 
 protected:
     using TriggeringCondition = std::function<bool(void)>;
 
-    virtual vanetza::asn1::Denm createMessageSkeleton();
-
     DenService* mService = nullptr;
-    const VehicleDataProvider* mVdp = nullptr;
+
 };
 
 } // namespace den

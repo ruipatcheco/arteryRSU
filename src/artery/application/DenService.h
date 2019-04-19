@@ -42,7 +42,10 @@ class DenService : public ItsG5BaseService
     private:
         void fillRequest(vanetza::btp::DataRequestB&);
         void initUseCases();
+        void verifyStation();
 
+        long rsuId;
+        bool sendFromRSU;
         const Timer* mTimer;
         uint16_t mSequenceNumber;
         std::shared_ptr<artery::den::Memory> mMemory;

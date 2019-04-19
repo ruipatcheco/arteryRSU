@@ -1,7 +1,7 @@
 #ifndef ARTERY_DEN_SUSPENDABLEUSECASE_H_P2OWWY0L
 #define ARTERY_DEN_SUSPENDABLEUSECASE_H_P2OWWY0L
 
-#include "artery/application/den/UseCase.h"
+#include "artery/application/den/UseCaseVehicle.h"
 #include <boost/optional.hpp>
 #include <omnetpp/simtime.h>
 
@@ -10,7 +10,7 @@ namespace artery
 namespace den
 {
 
-class SuspendableUseCase : public UseCase
+class SuspendableUseCase : public UseCaseVehicle
 {
 public:
     void initialize(int) override;

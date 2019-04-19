@@ -4,6 +4,7 @@
 #include <vanetza/btp/data_request.hpp>
 #include <vanetza/dcc/profile.hpp>
 #include <vanetza/geonet/interface.hpp>
+#include <iostream>
 
 using namespace omnetpp;
 using namespace vanetza;
@@ -33,4 +34,7 @@ void PoliceService::trigger()
     packet->setLaneIndex(vehicle_api.getLaneIndex(id));
     packet->setByteLength(40);
     request(req, packet);
+
+    std::string message("ClearLane Packet Sent");
+    std::cout << message << "\n";
 }

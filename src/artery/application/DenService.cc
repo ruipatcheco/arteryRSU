@@ -79,11 +79,53 @@ void DenService::receiveSignal(cComponent*, simsignal_t signal, cObject* obj, cO
     }
 }
 
+void DenService::verifyStation()
+{
+   cModule* mid=getParentModule();
+   std::string name= mid->getFullPath();
+   if(name.find("rsu")!=std::string::npos)
+   {
+       sendFromRSU=true;
+       rsuId=mid->getParentModule()->getId();
+   }
+   else
+   {
+       sendFromRSU=false;
+   }
+
+}
+
 void DenService::indicate(const vanetza::btp::DataIndication& indication, std::unique_ptr<vanetza::UpPacket> packet)
 {
+    printf("DenService::indicate 1\n");
+    fflush(stdout);
+
     Asn1PacketVisitor<vanetza::asn1::Denm> visitor;
     const vanetza::asn1::Denm* denm = boost::apply_visitor(visitor, *packet);
-    const auto egoStationID = getFacilities().get_const<VehicleDataProvider>().station_id();
+
+    const vanetza::geonet::DestinationVariant destination = indication.destination;
+    vanetza::geonet::Area area = boost::get<vanetza::geonet::Area>(destination);
+
+    printf("DenService.cc lat %d\n", area.position.latitude);
+
+    //const decltype(vanetza::geonet::DataIndication::destination) *destination = &indication.destination;
+    //vanetza::geonet::Area area = *dynamic_cast<vanetza::geonet::Area*> (destination);
+
+
+    //printf("DenService lat %d\n", destination.position.latitude);
+    //fflush(stdout);
+
+    verifyStation();
+    long  egoStationID;
+    if(sendFromRSU)
+    {
+        egoStationID=rsuId;
+    }
+    else
+    {
+       egoStationID = getFacilities().get_const<VehicleDataProvider>().station_id();
+
+    }
 
     if (denm && (*denm)->header.stationID != egoStationID) {
         DenmObject obj = visitor.shared_wrapper;
@@ -92,6 +134,13 @@ void DenService::indicate(const vanetza::btp::DataIndication& indication, std::u
 
         for (auto& use_case : mUseCases) {
             use_case.indicate(obj);
+            //const vanetza::asn1::Denm& asn1 = (*denm)->denm.alacarte->latitude_bytes
+            vanetza::units::GeoAngle lat = *static_cast<vanetza::units::GeoAngle *>(static_cast<void*>((*denm)->denm.alacarte->latitude_bytes));
+            printf("DEN Service LAT %d\n",lat );
+            fflush(stdout);
+
+            printf("DenService::indicate 2\n");
+            fflush(stdout);
         }
     }
 }
@@ -108,7 +157,20 @@ void DenService::trigger()
 ActionID_t DenService::requestActionID()
 {
     ActionID_t id;
-    id.originatingStationID = getFacilities().get_const<VehicleDataProvider>().station_id();
+
+    verifyStation();
+	long  egoStationID;
+	if(sendFromRSU)
+	{
+		egoStationID=rsuId;
+	}
+	else
+	{
+	   egoStationID = getFacilities().get_const<VehicleDataProvider>().station_id();
+
+	}
+
+    id.originatingStationID = egoStationID;
     id.sequenceNumber = ++mSequenceNumber;
     return id;
 }

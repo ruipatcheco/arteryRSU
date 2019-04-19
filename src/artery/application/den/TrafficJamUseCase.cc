@@ -302,7 +302,11 @@ vanetza::asn1::Denm TrafficJamAhead::createMessage()
     msg->denm.situation->eventType.subCauseCode = 0;
 
     // TODO set road type in Location container
+    //msg->denm.location->roadType = vanetza::asn1::allocate<RoadType_t>();
+    //*msg->denm.location->roadType = RoadType_nonUrban_WithStructuralSeparationToOppositeLanes;
+
     // TODO set lane position in Alacarte container
+
 
     return msg;
 }

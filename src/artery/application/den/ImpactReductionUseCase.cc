@@ -11,6 +11,9 @@
 #include "artery/application/VehicleDataProvider.h"
 #include <omnetpp/cexception.h>
 
+#include <string>
+#include <iostream>
+
 Define_Module(artery::den::ImpactReductionContainerExchange);
 
 namespace artery
@@ -49,6 +52,10 @@ void ImpactReductionContainerExchange::transmitMessage(RequestResponseIndication
 void ImpactReductionContainerExchange::handleStoryboardTrigger(const StoryboardSignal& signal)
 {
     if (signal.getCause() == "irc") {
+
+        std::string message("IRC on from storyboard");
+        std::cout << message << "\n";
+
         mPendingRequest = true;
     }
 }

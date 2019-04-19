@@ -1,6 +1,6 @@
 package artery.application.den;
 
-simple ImpactReductionContainerExchange like UseCase
+simple ImpactReductionContainerExchange like UseCaseVehicle
 {
     @class(den::ImpactReductionContainerExchange);
 }

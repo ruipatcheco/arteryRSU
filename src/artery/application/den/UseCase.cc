@@ -25,10 +25,10 @@ void UseCase::initialize(int stage)
 {
     if (stage == 0) {
         mService = omnetpp::check_and_cast<DenService*>(getParentModule());
-        mVdp = &mService->getFacilities().get_const<VehicleDataProvider>();
+        //mVdp = &mService->getFacilities().get_const<VehicleDataProvider>();
     }
 }
-
+/*
 vanetza::asn1::Denm UseCase::createMessageSkeleton()
 {
     vanetza::asn1::Denm message;
@@ -66,7 +66,7 @@ vanetza::asn1::Denm UseCase::createMessageSkeleton()
     asn_sequence_add(&message->denm.location->traces, path_history);
 
     return message;
-}
+}*/
 
 } // namespace den
 } // namespace artery

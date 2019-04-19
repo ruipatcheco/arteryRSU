@@ -7,20 +7,20 @@
 #ifndef ARTERY_DEN_IMPACTREDUCTIONCONTAINEREXCHANGE_H_FE8Z3BLJ
 #define ARTERY_DEN_IMPACTREDUCTIONCONTAINEREXCHANGE_H_FE8Z3BLJ
 
-#include "artery/application/den/UseCase.h"
+#include "artery/application/den/UseCaseVehicle.h"
 
 namespace artery
 {
 namespace den
 {
 
-class ImpactReductionContainerExchange : public UseCase
+class ImpactReductionContainerExchange : public UseCaseVehicle
 {
 public:
     // UseCase interface
-    void check() override;
-    void indicate(const artery::DenmObject&) override;
-    void handleStoryboardTrigger(const StoryboardSignal&) override;
+    void check();
+    void indicate(const artery::DenmObject&);
+    void handleStoryboardTrigger(const StoryboardSignal&);
 
     vanetza::asn1::Denm createMessage(RequestResponseIndication_t);
     vanetza::btp::DataRequestB createRequest();

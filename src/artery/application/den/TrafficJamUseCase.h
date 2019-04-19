@@ -39,12 +39,12 @@ public:
     vanetza::asn1::Denm createMessage();
     vanetza::btp::DataRequestB createRequest();
 
-    void check() override;
-    void indicate(const artery::DenmObject&) override {};
-    void handleStoryboardTrigger(const StoryboardSignal&) override {};
+    void check();
+    void indicate(const artery::DenmObject&) {};
+    void handleStoryboardTrigger(const StoryboardSignal&) {};
 
 protected:
-    void initialize(int) override;
+    void initialize(int);
 
     bool checkPreconditions();
     bool checkConditions();
@@ -71,12 +71,12 @@ public:
     vanetza::btp::DataRequestB createRequest();
     vanetza::asn1::Denm createMessage();
 
-    void check() override;
-    void indicate(const artery::DenmObject&) override {};
-    void handleStoryboardTrigger(const StoryboardSignal&) override {};
+    void check();
+    void indicate(const artery::DenmObject&) {};
+    void handleStoryboardTrigger(const StoryboardSignal&) {};
 
 protected:
-    void initialize(int) override;
+    void initialize(int);
 
     bool checkPreconditions();
     bool checkConditions();

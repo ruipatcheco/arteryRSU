@@ -1,6 +1,8 @@
 add_subdirectory(artery)
 add_subdirectory(gemv2)
 add_subdirectory(highway-police)
+
+
 if(WITH_STORYBOARD)
     add_subdirectory(storyboard)
 endif()
@@ -14,6 +16,11 @@ endif()
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/mt-its2017/omnetpp.ini)
     add_opp_run(mtits2017 WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/mt-its2017)
     add_opp_test(mtits2017 SUFFIX test SIMTIME_LIMIT 30s)
+endif()
+
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/c-its/omnetpp.ini)
+    add_opp_run(cits WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/c-its)
+    add_opp_test(cits SUFFIX test SIMTIME_LIMIT 30s)
 endif()
 
 if(TARGET lte)

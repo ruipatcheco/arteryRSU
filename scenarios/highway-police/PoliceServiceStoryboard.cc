@@ -1,5 +1,6 @@
 #include "PoliceServiceStoryboard.h"
 #include <artery/application/StoryboardSignal.h>
+#include <iostream>
 
 using namespace omnetpp;
 
@@ -31,6 +32,9 @@ void PoliceServiceStoryboard::receiveSignal(omnetpp::cComponent*, omnetpp::simsi
         auto storysig = dynamic_cast<artery::StoryboardSignal*>(sigobj);
         if (storysig && storysig->getCause() == "siren on") {
             activatedSiren = true;
+
+            std::string message("Siren on from storyboard");
+            std::cout << message << "\n";
         }
     }
 }
